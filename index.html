@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNow - Noticias Tecnológicas</title> 
+    <!-- Fuente externa Roboto, de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon">
+    <!--Hoja de Estilos CSS-->
+    <link rel="stylesheet" href="estilos.css">
+    <!--íconos de redes sociales -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- jQuery para la animación del banner -->
+    <script src="scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Grid Área: Header -->
+        <header>
+            <h1 class="titulo">TechNow</h1><!-- Animación con keyframe -->
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Gadgets</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Banner animado con jQuery (3 imágenes) -->
+        <section class="banner">
+            <img src="img/banner1.jpg" alt="Noticia 1">
+            <img src="img/banner2.jpg" alt="Noticia 2" style="display:none;">
+            <img src="img/banner3.jpg" alt="Noticia 3" style="display:none;">
+        </section>
+<!-- Grid Área: Contenido con 3 columnas diferenciadas -->
+        <main class="contenido">
+            <!-- Columna 1: Artículo principal -->
+            <section class="columna principal">
+                <h2>Últimas Noticias</h2>
+                <p>Apple presenta su nuevo procesador M4, con mejoras de rendimiento impresionantes...</p>
+                <img src="img/noticia.jpg" alt="Noticia tech">
+            </section>
+            <!-- Columna 2: Gadgets -->
+            <section class="columna gadgets">
+                <h2>Gadgets</h2>
+                <ul>
+                    <li>Smartwatch con sensor de glucosa</li>
+                    <li>Teclado mecánico silencioso</li>
+                    <li>Mini dron con cámara 4K</li>
+                </ul>
+                <img src="img/gadget.jpg" alt="Noticia tech">
+            </section>
+            <!-- Columna 3: Formulario con boton para suscripcion -->
+            <section class="columna suscripcion">
+                <h2>Suscríbete</h2>
+                <form>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </section>
+        </main>
+<!-- Grid Área: Footer con redes sociales y dirección -->
+        <footer>
+            <p>&copy; 2025 TechNow - Noticias Tecnológicas</p>
+            <p>Dirección: Calle Innovación 456, Ciudad Futuro</p>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
